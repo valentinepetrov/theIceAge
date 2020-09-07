@@ -1,2 +1,2 @@
-#[theIceAge](https://valentinepetrov.github.io/theIceAge/)
+# [theIceAge](https://valentinepetrov.github.io/theIceAge/)
 pureCSS
