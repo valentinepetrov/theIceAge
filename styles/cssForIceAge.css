@@ -1,0 +1,163 @@
+html {
+  cursor: url(../images/cursor1.png), auto;
+}
+
+body {
+  margin: 0;
+  background-image: url("../images/justSpace.jpg");
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.the-main-block {
+  position: absolute;
+  left: 70%;
+  top: 54%;
+  height: 15%;
+  width: 15%;
+}
+
+/* all squirrel => */
+
+.the-main-image {
+  position: absolute;
+  left: -300%;
+  top: -255%;
+  animation: gravity 4s infinite;
+}
+
+/* <= all squirrel  */
+
+/* first face => */
+
+.for-1-face {
+  position: absolute;
+  left: 53%;
+  top: 20%;
+  animation: gravity 4s infinite;
+}
+
+.the-main-block:hover .for-1-face {
+  animation: for-1-face 2s forwards;
+}
+
+@keyframes for-1-face {
+  0% {
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* <= first face  */
+
+/* second face => */
+
+.for-2-face {
+  position: absolute;
+  left: 42%;
+  top: 6%;
+  animation: gravity 4s infinite;
+  opacity: 0;
+}
+
+.the-main-block:hover .for-2-face {
+  animation: for-2-face 2s forwards;
+}
+
+@keyframes for-2-face {
+  0% {
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* <= second face  */
+
+/* afro-belarusian hole => */
+
+.for-hole {
+  position: absolute;
+  left: 0%;
+  top: -345%;
+  width: 100%;
+  animation: perspective;
+}
+
+.the-hole {
+  width: 200%;
+  animation: for-hole 22s infinite;
+}
+
+@keyframes for-hole {
+  0% {
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* <= afro-belarusian hole */
+
+/* nut => */
+
+.for-nut {
+  position: absolute;
+  width: 200%;
+}
+
+.the-main-block:not(:hover) {
+  animation: gravity 2s infinite;
+}
+
+@keyframes gravity {
+  0% {
+  }
+
+  50% {
+    transform: translate(0, 3%);
+  }
+
+  100% {
+  }
+}
+
+.the-main-block:hover .for-nut {
+  animation: for-nut 2s forwards;
+}
+
+.the-main-block:hover .for-image {
+  animation: for-image 2s forwards;
+}
+
+@keyframes for-nut {
+  0% {
+    left: 0%;
+    top: 0%;
+  }
+
+  100% {
+    left: -5%;
+    top: -252%;
+    transform: rotate(1360deg);
+  }
+}
+
+@keyframes for-image {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+/* <= nut*/
